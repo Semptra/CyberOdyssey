@@ -1,18 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class UserInputComponent : MonoBehaviour
+﻿namespace CyberOdyssey.Components
 {
-    // Start is called before the first frame update
-    void Start()
+    using System;
+    using Unity.Entities;
+    using UnityEngine;
+
+    [Serializable]
+    public struct UserInput : IComponentData
     {
-        
+        public float Horizontal;
+        public float Vertical;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public class UserInputComponent : ComponentDataProxy<UserInput> {}
 }
