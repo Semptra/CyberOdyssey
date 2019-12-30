@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6625318614975875869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.06, y: -0.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -115,7 +115,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5090bfcf5f1a5c14b9981aa4b2dcd2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
+  Health: 25
+  MovementSpeed: 2
+  Velocity: {x: -1, y: 0}
+  Score: 500
+  DestroySound: {fileID: 8300000, guid: 6ec252decff9ffb4780bd614d9c661d8, type: 3}
+  Projectile: {fileID: 7657501742894194544, guid: f4a46fb1772f8cf4d95b38dea0f67ff1,
+    type: 3}
+  ReloadTime: 3
 --- !u!60 &1006451582131612870
 PolygonCollider2D:
   m_ObjectHideFlags: 0
